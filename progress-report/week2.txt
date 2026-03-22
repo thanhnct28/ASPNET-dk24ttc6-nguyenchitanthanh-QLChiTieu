@@ -1,0 +1,80 @@
+BÁO CÁO TIẾN ĐỘ TUẦN 2
+Thời gian: 15/03/2026 - 21/03/2026
+
+1. Nội dung đã thực hiện
+
+- Xây dựng chức năng đăng nhập (DangNhap.aspx):
+  + Thiết kế giao diện đăng nhập gồm:
+    * Tên đăng nhập
+    * Mật khẩu
+    * Nút đăng nhập
+
+- Xử lý đăng nhập bằng C#:
+  + Kiểm tra thông tin người dùng từ database (bảng NguoiDung)
+  + Sử dụng ADO.NET để truy vấn dữ liệu:
+    * SqlConnection
+    * SqlCommand
+
+- Thiết lập Session:
+  + Lưu thông tin người dùng sau khi đăng nhập:
+    * Session["user"]
+  + Sử dụng Session để xác định trạng thái đăng nhập
+
+- Phân quyền truy cập cơ bản:
+  + Nếu chưa đăng nhập → redirect về DangNhap.aspx
+  + Áp dụng kiểm tra Session trong các trang:
+    * ChiTieu.aspx
+
+- Xây dựng chức năng đăng xuất:
+  + Xóa Session
+  + Quay về trang đăng nhập
+
+- Xử lý thông báo lỗi:
+  + Sai tài khoản hoặc mật khẩu
+  + Hiển thị thông báo trên giao diện
+
+- Cải thiện giao diện:
+  + Sử dụng Bootstrap để thiết kế form login
+  + Căn giữa form
+  + Thêm icon (Font Awesome)
+
+- Tối ưu code:
+  + Tách logic xử lý
+  + Viết code rõ ràng, dễ hiểu
+
+---
+
+2. Kết quả đạt được
+
+- Hoàn thành chức năng đăng nhập / đăng xuất
+- Kiểm tra được tài khoản từ database
+- Lưu Session và duy trì trạng thái đăng nhập
+- Bảo vệ được các trang chức năng (không cho truy cập khi chưa login)
+- Giao diện login thân thiện, dễ sử dụng
+
+---
+
+3. Khó khăn gặp phải
+
+- Xử lý Session trong ASP.NET WebForms
+- Lỗi khi kiểm tra đăng nhập nhiều lần (Session bị mất)
+- Kết nối database khi login
+- Hiển thị thông báo lỗi hợp lý cho người dùng
+
+---
+
+4. Hướng phát triển tuần tiếp theo
+
+- Xây dựng chức năng quản lý danh mục (DanhMucChi)
+- Thêm, sửa, xóa danh mục
+- Liên kết danh mục với chi tiêu
+- Cải thiện trải nghiệm người dùng
+
+---
+
+5. Tự đánh giá
+
+- Mức độ hoàn thành: 80%
+- Đã hiểu rõ cách hoạt động của Session và đăng nhập
+- Có thể xây dựng hệ thống xác thực cơ bản
+- Cần nâng cấp bảo mật (mã hóa mật khẩu trong tương lai)
