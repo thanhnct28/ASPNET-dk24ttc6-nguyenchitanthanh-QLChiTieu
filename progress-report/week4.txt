@@ -1,0 +1,114 @@
+BÁO CÁO TIẾN ĐỘ TUẦN 4
+Thời gian: 29/03/2026 - 04/04/2026
+
+1. Nội dung đã thực hiện
+
+- Hoàn thiện chức năng quản lý chi tiêu (ChiTieu.aspx):
+
+  + Thiết kế giao diện nhập liệu:
+    * Số tiền
+    * Ngày chi
+    * Danh mục (DropDownList)
+    * Ghi chú
+
+  + Tối ưu bố cục giao diện:
+    * Sử dụng Bootstrap (grid system)
+    * Card layout
+    * Button styled (Lưu chi tiêu)
+
+- Hiển thị danh sách chi tiêu:
+
+  + Sử dụng GridView để hiển thị dữ liệu
+  + Các cột gồm:
+    * Mã chi tiêu
+    * Tên danh mục
+    * Số tiền
+    * Ngày chi
+    * Ghi chú
+
+  + Sắp xếp theo ngày chi giảm dần
+  + Hiển thị định dạng:
+    * Số tiền: format số (1.000.000)
+    * Ngày: dd/MM/yyyy
+
+- Xây dựng chức năng CRUD chi tiêu:
+
+  + Thêm mới chi tiêu:
+    * Nhập dữ liệu từ form
+    * Validate dữ liệu trước khi lưu
+    * Insert vào database
+
+  + Sửa chi tiêu:
+    * Sử dụng GridView Edit
+    * Cho phép chỉnh sửa trực tiếp trên bảng
+    * Cập nhật dữ liệu (UPDATE)
+
+  + Xóa chi tiêu:
+    * Sử dụng GridView Delete
+    * Thêm confirm bằng JavaScript trước khi xóa
+    * Xóa dữ liệu khỏi database
+
+- Xử lý dữ liệu bằng ADO.NET:
+  + SqlConnection
+  + SqlCommand
+  + SqlDataAdapter
+  + Sử dụng tham số (Parameters) để tránh SQL Injection
+
+- Validate dữ liệu:
+
+  + Kiểm tra số tiền:
+    * Phải là số
+    * Lớn hơn 0
+
+  + Kiểm tra ngày:
+    * Đúng định dạng Date
+
+- Xử lý giao diện nâng cao:
+
+  + Format số tiền realtime bằng JavaScript
+  + Hiển thị thông báo:
+    * Thêm thành công
+    * Sửa thành công
+    * Xóa thành công
+
+- Bảo mật dữ liệu:
+
+  + Kiểm tra Session["user"]
+  + Chỉ hiển thị dữ liệu của user đang đăng nhập
+  + Không cho truy cập nếu chưa login
+
+---
+
+2. Kết quả đạt được
+
+- Hoàn thiện đầy đủ chức năng CRUD chi tiêu
+- Dữ liệu hiển thị chính xác, rõ ràng
+- GridView hoạt động ổn định (Edit, Update, Delete)
+- Validate dữ liệu tốt, hạn chế lỗi người dùng
+- Giao diện thân thiện, dễ sử dụng
+
+---
+
+3. Khó khăn gặp phải
+
+- Lỗi CommandField trong GridView (DeleteButtonType)
+- Xử lý dữ liệu trong GridView khi edit (lấy giá trị từ TextBox)
+- Format số tiền khi nhập và khi hiển thị
+- Đồng bộ dữ liệu sau khi cập nhật / xóa
+
+---
+
+4. Hướng phát triển tuần tiếp theo
+
+- Xây dựng chức năng quản lý thu nhập (ThuNhap)
+- Thêm thống kê tổng thu - chi
+- Hiển thị dữ liệu bằng biểu đồ (Chart.js)
+
+---
+
+5. Tự đánh giá
+
+- Mức độ hoàn thành: 90%
+- Đã thành thạo CRUD với GridView trong ASP.NET WebForms
+- Hiểu rõ luồng xử lý dữ liệu từ giao diện → database
+- Hệ thống gần hoàn chỉnh phần chức năng chính
