@@ -216,16 +216,16 @@ Xây dựng API / Mobile App
 
 📅 Tiến độ thực hiện
 Tuần	Nội dung
-```text
-Week 1	Setup project + database
-Week 2	Login / Logout
-Week 3	CRUD DanhMuc
-Week 4	CRUD ChiTieu
-Week 5	CRUD ThuNhap
-Week 6	Dashboard + Chart
-Week 7	Validate + Export Excel
-Week 8	Hoàn thiện UI + Final
-```
+
+- [x] **Week 1:** Setup project + database
+- [x] **Week 2:**	Login / Logout
+- [x] **Week 3:**	CRUD DanhMuc
+- [x] **Week 4:**	CRUD ChiTieu
+- [x] **Week 5:**	CRUD ThuNhap
+- [x] **Week 6:**	Dashboard + Chart
+- [x] **Week 7:**	Validate + Export Excel
+- [x] **Week 8:**	Hoàn thiện UI + Final
+
 
 📌 Ghi chú
 
