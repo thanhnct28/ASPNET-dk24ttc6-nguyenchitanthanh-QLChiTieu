@@ -64,9 +64,11 @@ Hệ thống sử dụng cơ chế mã hóa mật khẩu để đảm bảo an t
 - Áp dụng SecurityHelper để xử lý hash tập trung
 - Đảm bảo bảo mật cơ bản theo nguyên tắc không lưu mật khẩu dạng plain text
 
-👉 Ví dụ:
+👉 **Ví dụ:**
+```text
 Password: 123456
 Hash: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+```
 
 ---
 
