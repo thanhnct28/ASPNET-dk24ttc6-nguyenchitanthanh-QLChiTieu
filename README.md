@@ -134,9 +134,8 @@ Hash: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
 git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiTieu.git
 ```
 
-2. Mở bằng Visual Studio
-
-Mở file QuanLyChiTieuCaNhan.slnx
+### 2. Mở bằng Visual Studio
+* Mở file giải pháp: `QuanLyChiTieuCaNhan.slnx`
 
 3. Cấu hình database
 
