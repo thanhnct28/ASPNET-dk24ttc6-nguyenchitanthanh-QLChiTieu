@@ -132,7 +132,7 @@ Hash: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
 
 ```powershell
 git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiTieu.git
-
+```
 
 2. Mở bằng Visual Studio
 
@@ -144,10 +144,12 @@ Mở file Web.config
 
 Sửa connection string:
 
+```xml
 <connectionStrings>
   <add name="QLChiTieu"
        connectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=QuanLyChiTieuCaNhan;Integrated Security=True" />
 </connectionStrings>
+```
 
 4. Import database
 
@@ -157,9 +159,11 @@ Restore file QuanLyChiTieuCaNhan.bak
 
 Hướng dẫn dùng lệnh restore file database, ví dụ file để ở ổ đĩa D:
 
+```sql
 RESTORE DATABASE QuanLyChiTieuCaNhan
 FROM DISK = 'D:\QuanLyChiTieuCaNhan.bak'
 WITH REPLACE, RECOVERY;
+```
 
 5. Chạy project
 
@@ -167,9 +171,10 @@ Nhấn F5
 
 6.  ## 🔑 Tài khoản demo
 
+```text
 - Username: admin  
 - Password: 123456
-
+```
 
 -----------------------
 
