@@ -137,7 +137,7 @@ git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiT
 ### 2. Mở bằng Visual Studio
 * Mở file giải pháp: `QuanLyChiTieuCaNhan.slnx`
 
-3. Cấu hình database
+### 3. Cấu hình database
 
 Mở file Web.config
 
@@ -150,7 +150,7 @@ Sửa connection string:
 </connectionStrings>
 ```
 
-4. Import database
+### 4. Import database
 
 Mở SQL Server
 
@@ -164,11 +164,11 @@ FROM DISK = 'D:\QuanLyChiTieuCaNhan.bak'
 WITH REPLACE, RECOVERY;
 ```
 
-5. Chạy project
+### 5. Chạy project
 
 Nhấn F5
 
-6.  ## 🔑 Tài khoản demo
+### 6. 🔑 Tài khoản demo
 
 ```text
 - Username: admin  
