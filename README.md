@@ -139,9 +139,9 @@ git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiT
 
 ### 3. Cấu hình database
 
-Mở file Web.config
+* Mở file Web.config
 
-Sửa connection string:
+* Sửa connection string:
 
 ```xml
 <connectionStrings>
@@ -152,11 +152,11 @@ Sửa connection string:
 
 ### 4. Import database
 
-Mở SQL Server
+* Mở SQL Server
 
-Restore file QuanLyChiTieuCaNhan.bak
+* Restore file QuanLyChiTieuCaNhan.bak
 
-Hướng dẫn dùng lệnh restore file database, ví dụ file để ở ổ đĩa D:
+* Hướng dẫn dùng lệnh restore file database, ví dụ file để ở ổ đĩa D:
 
 ```sql
 RESTORE DATABASE QuanLyChiTieuCaNhan
@@ -166,7 +166,7 @@ WITH REPLACE, RECOVERY;
 
 ### 5. Chạy project
 
-Nhấn F5
+* Nhấn F5
 
 ### 6. 🔑 Tài khoản demo
 
@@ -180,39 +180,39 @@ Nhấn F5
 ## 🖥️ Giao diện hệ thống
 📌 Các trang chính:
 
-Đăng nhập
+* Đăng nhập
 
-Quản lý danh mục
+* Quản lý danh mục
 
-Quản lý chi tiêu
+* Quản lý chi tiêu
 
-Quản lý thu nhập
+* Quản lý thu nhập
 
-Dashboard thống kê
+* Dashboard thống kê
 
 📈 Kết quả đạt được
 
-Hoàn thành đầy đủ chức năng CRUD
+* Hoàn thành đầy đủ chức năng CRUD
 
-Giao diện thân thiện, dễ sử dụng
+* Giao diện thân thiện, dễ sử dụng
 
-Thống kê trực quan bằng biểu đồ
+* Thống kê trực quan bằng biểu đồ
 
-Xuất báo cáo Excel
+* Xuất báo cáo Excel
 
-Hệ thống hoạt động ổn định
+* Hệ thống hoạt động ổn định
 
 🔧 Hướng phát triển
 
-Xuất báo cáo PDF
+* Xuất báo cáo PDF
 
-Thống kê theo năm nâng cao
+* Thống kê theo năm nâng cao
 
-Phân quyền người dùng
+* Phân quyền người dùng
 
-Triển khai lên hosting
+* Triển khai lên hosting
 
-Xây dựng API / Mobile App
+* Xây dựng API / Mobile App
 
 📅 Tiến độ thực hiện
 Tuần	Nội dung
@@ -229,21 +229,21 @@ Tuần	Nội dung
 
 📌 Ghi chú
 
-Dữ liệu chỉ mang tính demo
+* Dữ liệu chỉ mang tính demo
 
-Hệ thống phục vụ mục đích học tập
+* Hệ thống phục vụ mục đích học tập
 
 ⭐ Đánh giá
 
-Đồ án đáp ứng đầy đủ yêu cầu:
+* Đồ án đáp ứng đầy đủ yêu cầu:
 
-Có CRUD
+* Có CRUD
 
-Có Dashboard
+* Có Dashboard
 
-Có biểu đồ
+* Có biểu đồ
 
-Có xuất báo cáo
+* Có xuất báo cáo
 
 
 ## 📎 Link GitHub
