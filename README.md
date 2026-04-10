@@ -243,7 +243,7 @@ Tuần	Nội dung
 
 * Có biểu đồ
 
-* Có xuất báo cáo
+* Có xuất báo cáo (file excel)
 
 
 ## 📎 Link GitHub
