@@ -3,10 +3,10 @@
 ---
 
 ## 👤 Thông tin sinh viên
-* **Họ tên:** Nguyễn Chí Tấn Thành  
-* **Lớp:** DK24TTC6  
-* **MSSV:** 170124671  
-* **Email:** thanhnct260295@tvu-onschool.edu.vn  
+- **Họ tên:** Nguyễn Chí Tấn Thành  
+- **Lớp:** DK24TTC6  
+- **MSSV:** 170124671  
+- **Email:** thanhnct260295@tvu-onschool.edu.vn  
 
 ---
 
@@ -14,159 +14,229 @@
 Trong thời đại hiện nay, việc quản lý tài chính cá nhân là một nhu cầu thiết yếu.  
 Đề tài xây dựng một hệ thống web giúp người dùng theo dõi, kiểm soát và phân tích thu chi một cách hiệu quả.
 
-**Hệ thống hỗ trợ:**
-* Theo dõi thu nhập và chi tiêu.
-* Phân loại theo danh mục linh hoạt.
-* Thống kê trực quan bằng biểu đồ (Charts).
-* Xuất báo cáo dữ liệu ra file Excel.
+Hệ thống hỗ trợ:
+- Theo dõi thu nhập và chi tiêu
+- Phân loại theo danh mục
+- Thống kê trực quan bằng biểu đồ
+- Xuất báo cáo Excel
 
 ---
 
 ## 🎯 Mục tiêu hệ thống
-* Giúp người dùng kiểm soát tài chính cá nhân chặt chẽ.
-* Hạn chế các khoản chi tiêu không cần thiết.
-* Hỗ trợ lập kế hoạch tài chính dài hạn.
-* Cung cấp báo cáo trực quan, dễ hiểu cho người dùng.
+- Giúp người dùng kiểm soát tài chính cá nhân
+- Hạn chế chi tiêu không cần thiết
+- Hỗ trợ lập kế hoạch tài chính
+- Cung cấp báo cáo trực quan, dễ hiểu
 
 ---
 
 ## ⚙️ Công nghệ sử dụng
 
 | Công nghệ | Mô tả |
-| :--- | :--- |
-| **ASP.NET WebForms** | Framework chính xây dựng giao diện và xử lý logic web |
-| **SQL Server** | Hệ quản trị cơ sở dữ liệu quan hệ |
-| **ADO.NET** | Thư viện kết nối và tương tác dữ liệu SQL |
-| **Bootstrap 5** | Framework CSS thiết kế giao diện Responsive |
-| **JavaScript / jQuery** | Xử lý các tương tác phía Client |
-| **Chart.js** | Thư viện hiển thị biểu đồ thống kê |
-| **EPPlus** | Thư viện hỗ trợ xuất báo cáo ra file Excel |
+|----------|------|
+| ASP.NET WebForms | Xây dựng giao diện web |
+| SQL Server | Lưu trữ dữ liệu |
+| ADO.NET | Kết nối và xử lý dữ liệu |
+| Bootstrap | Thiết kế giao diện |
+| JavaScript | Xử lý phía client |
+| Chart.js | Hiển thị biểu đồ |
+| HTML/CSS | Giao diện |
 
 ---
 
 ## 🧩 Chức năng chính
 
 ### 🔐 1. Xác thực người dùng
-* Đăng ký tài khoản mới.
-* Đăng nhập / Đăng xuất hệ thống.
-* Kiểm tra Session để bảo vệ các trang nội bộ.
-* Mã hóa mật khẩu bằng thuật toán **SHA-256** trước khi lưu vào Database.
+- Đăng ký tài khoản
+- Đăng nhập / đăng xuất
+- Kiểm tra session
+- Mã hóa mật khẩu bằng SHA-256 trước khi lưu database
 
-### 📂 2. Quản lý danh mục
-* Thêm, sửa, xóa các loại danh mục (Ăn uống, Di chuyển, Lương...).
-* Phân loại khoản chi dựa trên danh mục đã tạo.
+---
+## 🔒 Bảo mật hệ thống
 
-### 💸 3. Quản lý chi tiêu & Thu nhập
-* Ghi chép chi tiết các khoản chi và thu nhập hàng ngày.
-* Hỗ trợ chỉnh sửa và xóa các bản ghi sai sót.
-* Ghi chú chi tiết cho từng giao dịch.
+Hệ thống sử dụng cơ chế mã hóa mật khẩu để đảm bảo an toàn thông tin người dùng:
 
-### 📊 4. Thống kê & Báo cáo
-* Tự động tính toán Tổng thu / Tổng chi và Số dư hiện tại.
-* **Biểu đồ thu chi theo tháng:** Sử dụng Line Chart để theo dõi biến động.
-* **Biểu đồ theo danh mục:** Sử dụng Pie Chart để xem tỷ trọng chi tiêu.
+- Mật khẩu không lưu dạng plain text
+- Sử dụng thuật toán băm SHA-256
+- Mật khẩu được hash trước khi lưu vào database
+- Khi đăng nhập, hệ thống hash password nhập vào và so sánh với dữ liệu đã lưu
+- Áp dụng SecurityHelper để xử lý hash tập trung
+- Đảm bảo bảo mật cơ bản theo nguyên tắc không lưu mật khẩu dạng plain text
 
-### 📤 5. Xuất báo cáo Excel
-* Xuất toàn bộ dữ liệu thu và chi chung vào 1 file Excel chuyên nghiệp.
-* Hỗ trợ lọc dữ liệu theo khoảng thời gian trước khi xuất.
+👉 Ví dụ:
+Password: 123456
+Hash: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
 
 ---
 
-## 🔒 Bảo mật hệ thống
+### 📂 2. Quản lý danh mục
+- Thêm danh mục
+- Sửa danh mục
+- Xóa danh mục
+- Phân loại chi tiêu
 
-Hệ thống sử dụng cơ chế mã hóa mật khẩu để đảm bảo an toàn thông tin:
-* Mật khẩu tuyệt đối **không** lưu dạng plain text.
-* Sử dụng lớp `SecurityHelper` để thực hiện hash SHA-256 tập trung.
-* Khi đăng nhập, hệ thống hash password nhập vào và so sánh với chuỗi hash trong database.
+---
 
-> **Ví dụ:**
-> * **Password:** `123456`
-> * **Hash:** `8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92`
+### 💸 3. Quản lý chi tiêu
+- Thêm khoản chi
+- Chỉnh sửa chi tiêu
+- Xóa chi tiêu
+- Ghi chú chi tiết
+
+---
+
+### 💰 4. Quản lý thu nhập
+- Thêm thu nhập
+- Sửa thu nhập
+- Xóa thu nhập
+
+---
+
+### 📊 5. Thống kê & báo cáo
+- Tổng thu / tổng chi
+- Tính số dư
+- Tỷ lệ tiết kiệm (%)
+- Biểu đồ thu chi theo tháng (Line Chart)
+- Biểu đồ chi tiêu theo danh mục (Pie Chart)
+
+---
+
+### 📤 6. Xuất báo cáo Excel
+- Xuất dữ liệu thu + chi chung 1 file
+- Lọc theo khoảng thời gian
+- Hiển thị:
+  - Ngày
+  - Loại (Thu / Chi)
+  - Danh mục
+  - Số tiền
+  - Ghi chú
 
 ---
 
 ## 🗄️ Thiết kế cơ sở dữ liệu
 
-Hệ thống bao gồm các bảng chính liên kết chặt chẽ với nhau:
-* `NguoiDung`: Lưu trữ thông tin tài khoản và mật khẩu đã hash.
-* `DanhMucChi`: Định nghĩa các nhóm chi tiêu riêng cho từng user.
-* `ChiTieu`: Lưu trữ lịch sử các khoản chi.
-* `ThuNhap`: Lưu trữ lịch sử các khoản thu.
+### 📌 Các bảng chính:
+- **NguoiDung** – thông tin người dùng
+- **DanhMucChi** – danh mục chi tiêu
+- **ChiTieu** – các khoản chi
+- **ThuNhap** – các khoản thu
 
 ---
 
-## 🚀 Hướng dẫn cài đặt & Chạy project
+## 🚀 Hướng dẫn cài đặt & chạy
 
 ### 1. Clone project
-Mở Terminal hoặc Git Bash và chạy lệnh:
-```powershell
+
 git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiTieu.git
+
 
 2. Mở bằng Visual Studio
 
-Mở file giải pháp: QuanLyChiTieuCaNhan.slnx (hoặc .sln).
-3. Cấu hình Database
+Mở file QuanLyChiTieuCaNhan.slnx
 
-Mở file Web.config và chỉnh sửa chuỗi kết nối phù hợp với máy của bạn:
-XML
+3. Cấu hình database
+
+Mở file Web.config
+
+Sửa connection string:
 
 <connectionStrings>
-  <add name="QLChiTieu" 
-       connectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=QuanLyChiTieuCaNhan;Integrated Security=True" 
-       providerName="System.Data.SqlClient" />
+  <add name="QLChiTieu"
+       connectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=QuanLyChiTieuCaNhan;Integrated Security=True" />
 </connectionStrings>
 
-4. Import Database
+4. Import database
 
-Sử dụng lệnh sau trong SQL Server để Restore dữ liệu từ file .bak:
-SQL
+Mở SQL Server
 
-USE master;
-GO
-RESTORE DATABASE QuanLyChiTieuCaNhan 
-FROM DISK = 'D:\QuanLyChiTieuCaNhan.bak' 
+Restore file QuanLyChiTieuCaNhan.bak
+
+Hướng dẫn dùng lệnh restore file database, ví dụ file để ở ổ đĩa D:
+
+RESTORE DATABASE QuanLyChiTieuCaNhan
+FROM DISK = 'D:\QuanLyChiTieuCaNhan.bak'
 WITH REPLACE, RECOVERY;
-GO
 
 5. Chạy project
 
-Nhấn F5 để khởi chạy ứng dụng.
-🔑 Tài khoản Demo
+Nhấn F5
 
-    Username: admin
+6.  ## 🔑 Tài khoản demo
 
-    Password: 123456
+- Username: admin  
+- Password: 123456
 
-🖥️ Giao diện hệ thống
 
-📌 Các trang chức năng chính:
+-----------------------
 
-    Trang Đăng nhập
+## 🖥️ Giao diện hệ thống
+📌 Các trang chính:
 
-    Dashboard thống kê tổng quan
+Đăng nhập
 
-    Quản lý danh mục & Thu chi
+Quản lý danh mục
 
-    Trang xuất báo cáo Excel
+Quản lý chi tiêu
+
+Quản lý thu nhập
+
+Dashboard thống kê
+
+📈 Kết quả đạt được
+
+Hoàn thành đầy đủ chức năng CRUD
+
+Giao diện thân thiện, dễ sử dụng
+
+Thống kê trực quan bằng biểu đồ
+
+Xuất báo cáo Excel
+
+Hệ thống hoạt động ổn định
+
+🔧 Hướng phát triển
+
+Xuất báo cáo PDF
+
+Thống kê theo năm nâng cao
+
+Phân quyền người dùng
+
+Triển khai lên hosting
+
+Xây dựng API / Mobile App
 
 📅 Tiến độ thực hiện
+Tuần	Nội dung
+Week 1	Setup project + database
+Week 2	Login / Logout
+Week 3	CRUD DanhMuc
+Week 4	CRUD ChiTieu
+Week 5	CRUD ThuNhap
+Week 6	Dashboard + Chart
+Week 7	Validate + Export Excel
+Week 8	Hoàn thiện UI + Final
 
-    [x] Week 1: Setup project + database
+📌 Ghi chú
 
-    [x] Week 2: Login / Logout
+Dữ liệu chỉ mang tính demo
 
-    [x] Week 3: CRUD Danh mục
+Hệ thống phục vụ mục đích học tập
 
-    [x] Week 4: CRUD Chi tiêu
+⭐ Đánh giá
 
-    [x] Week 5: CRUD Thu nhập
+Đồ án đáp ứng đầy đủ yêu cầu:
 
-    [x] Week 6: Dashboard + Chart
+Có CRUD
 
-    [x] Week 7: Validate + Export Excel
+Có Dashboard
 
-    [x] Week 8: Hoàn thiện UI + Final
+Có biểu đồ
 
-📎 Liên kết dự án
+Có xuất báo cáo
 
-👉 GitHub: https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiTieu
+
+## 📎 Link GitHub
+
+👉 https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiTieu
