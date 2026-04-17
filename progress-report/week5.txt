@@ -1,0 +1,116 @@
+BÁO CÁO TIẾN ĐỘ TUẦN 5
+Thời gian: 05/04/2026 - 11/04/2026
+
+1. Nội dung đã thực hiện
+
+- Xây dựng chức năng quản lý thu nhập (ThuNhap):
+
+  + Tạo trang ThuNhap.aspx
+  + Thiết kế giao diện nhập:
+    * Số tiền
+    * Ngày nhận
+    * Ghi chú
+
+  + Sử dụng Bootstrap để bố trí giao diện
+  + Tạo form nhập liệu tương tự trang ChiTieu
+
+- Hiển thị danh sách thu nhập:
+
+  + Sử dụng GridView
+  + Các cột gồm:
+    * Mã thu nhập
+    * Số tiền
+    * Ngày nhận
+    * Ghi chú
+
+  + Sắp xếp theo ngày giảm dần
+  + Format:
+    * Số tiền: định dạng số (1.000.000)
+    * Ngày: dd/MM/yyyy
+
+- Xây dựng chức năng CRUD thu nhập:
+
+  + Thêm thu nhập (INSERT)
+  + Sửa thu nhập (UPDATE)
+  + Xóa thu nhập (DELETE)
+
+  + Sử dụng GridView:
+    * Edit
+    * Update
+    * Delete
+
+- Xử lý dữ liệu bằng ADO.NET:
+
+  + SqlConnection
+  + SqlCommand
+  + SqlDataAdapter
+
+  + Sử dụng Parameters để đảm bảo an toàn dữ liệu
+
+- Validate dữ liệu:
+
+  + Số tiền phải là số hợp lệ
+  + Số tiền > 0
+  + Ngày hợp lệ
+
+- Áp dụng Session:
+
+  + Lấy MaNguoiDung từ Session["user"]
+  + Chỉ hiển thị dữ liệu của user hiện tại
+
+- Đồng bộ với hệ thống hiện tại:
+
+  + Giao diện và cách xử lý giống ChiTieu
+  + Code được tổ chức thống nhất
+
+- Cải thiện trải nghiệm người dùng:
+
+  + Hiển thị thông báo khi:
+    * Thêm thành công
+    * Sửa thành công
+    * Xóa thành công
+
+  + Confirm khi xóa dữ liệu
+
+---
+
+2. Kết quả đạt được
+
+- Hoàn thành chức năng CRUD thu nhập
+- Dữ liệu hiển thị chính xác
+- GridView hoạt động ổn định
+- Đồng bộ logic với phần chi tiêu
+- Hệ thống đã có đầy đủ:
+  + Thu nhập
+  + Chi tiêu
+
+---
+
+3. Khó khăn gặp phải
+
+- Trùng logic với ChiTieu → cần tổ chức code hợp lý
+- Xử lý format số tiền khi nhập
+- Đồng bộ giao diện giữa các trang
+- Kiểm tra dữ liệu đầu vào
+
+---
+
+4. Hướng phát triển tuần tiếp theo
+
+- Xây dựng chức năng thống kê:
+  + Tổng thu nhập
+  + Tổng chi tiêu
+  + Số dư
+
+- Tích hợp biểu đồ:
+  + Biểu đồ cột / tròn
+  + Sử dụng Chart.js
+
+---
+
+5. Tự đánh giá
+
+- Mức độ hoàn thành: 95%
+- Đã hoàn thiện đầy đủ chức năng chính của hệ thống
+- Code ổn định, dễ mở rộng
+- Sẵn sàng phát triển phần thống kê và nâng cao
