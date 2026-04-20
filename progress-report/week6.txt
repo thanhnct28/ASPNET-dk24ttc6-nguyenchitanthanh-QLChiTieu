@@ -1,0 +1,104 @@
+BÁO CÁO TIẾN ĐỘ TUẦN 6
+Thời gian: 12/04/2026 - 18/04/2026
+
+1. Nội dung đã thực hiện
+
+- Xây dựng chức năng thống kê tài chính:
+
+  + Tính toán:
+    * Tổng thu nhập
+    * Tổng chi tiêu
+    * Số dư (Thu - Chi)
+
+  + Hiển thị kết quả trên giao diện:
+    * Dạng text (label)
+    * Phân biệt màu sắc:
+      - Thu: màu xanh
+      - Chi: màu đỏ
+
+- Tạo trang Dashboard (ThongKe.aspx):
+
+  + Thiết kế giao diện tổng quan
+  + Sử dụng Bootstrap để bố trí layout
+  + Hiển thị các thông tin:
+    * Tổng thu
+    * Tổng chi
+    * Số dư hiện tại
+
+- Tích hợp biểu đồ (Chart.js):
+
+  + Sử dụng thư viện Chart.js
+  + Hiển thị dữ liệu dưới dạng biểu đồ:
+    * Biểu đồ tròn (Pie chart):
+      - Tỷ lệ thu / chi
+    * Biểu đồ cột (Bar chart):
+      - Thống kê theo ngày hoặc tháng
+
+- Xử lý dữ liệu thống kê:
+
+  + Truy vấn SQL:
+    * SUM(SoTien) cho bảng ThuNhap
+    * SUM(SoTien) cho bảng ChiTieu
+
+  + Lọc dữ liệu theo người dùng:
+    * Sử dụng Session["user"]
+
+- Truyền dữ liệu từ C# sang JavaScript:
+
+  + Sử dụng:
+    * Literal
+    * hoặc ClientScript/RegisterStartupScript
+
+  + Đổ dữ liệu vào Chart.js
+
+- Cải thiện giao diện:
+
+  + Card hiển thị số liệu
+  + Shadow + bo góc
+  + Giao diện hiện đại hơn
+
+- Tối ưu trải nghiệm người dùng:
+
+  + Dữ liệu hiển thị trực quan
+  + Dễ theo dõi tình hình tài chính
+  + Phản hồi nhanh
+
+---
+
+2. Kết quả đạt được
+
+- Hiển thị chính xác:
+  + Tổng thu
+  + Tổng chi
+  + Số dư
+
+- Biểu đồ hoạt động tốt
+- Giao diện dashboard rõ ràng, dễ hiểu
+- Người dùng có thể theo dõi tài chính trực quan
+
+---
+
+3. Khó khăn gặp phải
+
+- Truyền dữ liệu từ C# sang JavaScript
+- Cấu hình và sử dụng Chart.js
+- Xử lý dữ liệu thống kê từ nhiều bảng
+- Đồng bộ dữ liệu khi thay đổi
+
+---
+
+4. Hướng phát triển tuần tiếp theo
+
+- Kiểm thử toàn bộ hệ thống
+- Fix lỗi phát sinh
+- Tối ưu giao diện
+- Hoàn thiện báo cáo đồ án
+
+---
+
+5. Tự đánh giá
+
+- Mức độ hoàn thành: 98%
+- Đã hoàn thiện đầy đủ chức năng hệ thống
+- Có thêm phần thống kê nâng cao
+- Giao diện và trải nghiệm người dùng tốt
