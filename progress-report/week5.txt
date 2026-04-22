@@ -1,116 +1,117 @@
-BÁO CÁO TIẾN ĐỘ TUẦN 5
-Thời gian: 05/04/2026 - 11/04/2026
+# BÁO CÁO TIẾN ĐỘ TUẦN 5
+**Thời gian:** 05/04/2026 - 11/04/2026
 
-1. Nội dung đã thực hiện
+## 1. Nội dung đã làm
 
-- Xây dựng chức năng quản lý thu nhập (ThuNhap):
+- Làm chức năng quản lý thu nhập (ThuNhap)
 
-  + Tạo trang ThuNhap.aspx
-  + Thiết kế giao diện nhập:
-    * Số tiền
-    * Ngày nhận
-    * Ghi chú
+  - Tạo trang ThuNhap.aspx  
+  - Giao diện nhập:
+    - Số tiền  
+    - Ngày nhận  
+    - Ghi chú  
 
-  + Sử dụng Bootstrap để bố trí giao diện
-  + Tạo form nhập liệu tương tự trang ChiTieu
+  - Bố cục dùng Bootstrap  
+  - Form làm tương tự bên ChiTieu  
 
 - Hiển thị danh sách thu nhập:
 
-  + Sử dụng GridView
-  + Các cột gồm:
-    * Mã thu nhập
-    * Số tiền
-    * Ngày nhận
-    * Ghi chú
+  - Dùng GridView  
+  - Các cột:
+    - Mã  
+    - Số tiền  
+    - Ngày nhận  
+    - Ghi chú  
 
-  + Sắp xếp theo ngày giảm dần
-  + Format:
-    * Số tiền: định dạng số (1.000.000)
-    * Ngày: dd/MM/yyyy
+  - Sắp xếp theo ngày giảm dần  
+  - Format:
+    - Số tiền có dấu (vd: 1.000.000)  
+    - Ngày dd/MM/yyyy  
 
-- Xây dựng chức năng CRUD thu nhập:
+- Chức năng CRUD:
 
-  + Thêm thu nhập (INSERT)
-  + Sửa thu nhập (UPDATE)
-  + Xóa thu nhập (DELETE)
+  - Thêm  
+  - Sửa  
+  - Xóa  
 
-  + Sử dụng GridView:
-    * Edit
-    * Update
-    * Delete
+  - Dùng GridView:
+    - Edit  
+    - Update  
+    - Delete  
 
-- Xử lý dữ liệu bằng ADO.NET:
+- Xử lý bằng ADO.NET:
 
-  + SqlConnection
-  + SqlCommand
-  + SqlDataAdapter
-
-  + Sử dụng Parameters để đảm bảo an toàn dữ liệu
+  - SqlConnection  
+  - SqlCommand  
+  - SqlDataAdapter  
+  - Có dùng Parameters  
 
 - Validate dữ liệu:
 
-  + Số tiền phải là số hợp lệ
-  + Số tiền > 0
-  + Ngày hợp lệ
+  - Số tiền:
+    - Là số  
+    - > 0  
 
-- Áp dụng Session:
+  - Ngày hợp lệ  
 
-  + Lấy MaNguoiDung từ Session["user"]
-  + Chỉ hiển thị dữ liệu của user hiện tại
+- Dùng Session:
 
-- Đồng bộ với hệ thống hiện tại:
+  - Lấy MaNguoiDung từ `Session["user"]`  
+  - Chỉ hiển thị dữ liệu của user hiện tại  
 
-  + Giao diện và cách xử lý giống ChiTieu
-  + Code được tổ chức thống nhất
+- Đồng bộ với hệ thống:
 
-- Cải thiện trải nghiệm người dùng:
+  - Giao diện và cách xử lý giống ChiTieu  
+  - Code viết theo cùng kiểu  
 
-  + Hiển thị thông báo khi:
-    * Thêm thành công
-    * Sửa thành công
-    * Xóa thành công
+- Trải nghiệm người dùng:
 
-  + Confirm khi xóa dữ liệu
+  - Có thông báo khi:
+    - Thêm  
+    - Sửa  
+    - Xóa  
 
----
-
-2. Kết quả đạt được
-
-- Hoàn thành chức năng CRUD thu nhập
-- Dữ liệu hiển thị chính xác
-- GridView hoạt động ổn định
-- Đồng bộ logic với phần chi tiêu
-- Hệ thống đã có đầy đủ:
-  + Thu nhập
-  + Chi tiêu
+  - Có confirm khi xóa  
 
 ---
 
-3. Khó khăn gặp phải
+## 2. Kết quả đạt được
 
-- Trùng logic với ChiTieu → cần tổ chức code hợp lý
-- Xử lý format số tiền khi nhập
-- Đồng bộ giao diện giữa các trang
-- Kiểm tra dữ liệu đầu vào
-
----
-
-4. Hướng phát triển tuần tiếp theo
-
-- Xây dựng chức năng thống kê:
-  + Tổng thu nhập
-  + Tổng chi tiêu
-  + Số dư
-
-- Tích hợp biểu đồ:
-  + Biểu đồ cột / tròn
-  + Sử dụng Chart.js
+- Hoàn thành CRUD thu nhập  
+- Dữ liệu hiển thị đúng  
+- GridView chạy ổn  
+- Logic giống với phần chi tiêu  
+- Hệ thống đã có:
+  - Thu nhập  
+  - Chi tiêu  
 
 ---
 
-5. Tự đánh giá
+## 3. Khó khăn gặp phải
 
-- Mức độ hoàn thành: 95%
-- Đã hoàn thiện đầy đủ chức năng chính của hệ thống
-- Code ổn định, dễ mở rộng
-- Sẵn sàng phát triển phần thống kê và nâng cao
+- Code bị lặp lại với ChiTieu  
+- Format số tiền lúc nhập còn chưa đều  
+- Giao diện giữa các trang chưa đồng nhất hoàn toàn  
+- Validate vẫn còn thiếu vài trường hợp  
+
+---
+
+## 4. Hướng làm tiếp
+
+- Làm chức năng thống kê:
+  - Tổng thu  
+  - Tổng chi  
+  - Số dư  
+
+- Thêm biểu đồ:
+  - Biểu đồ cột / tròn  
+  - Dùng Chart.js  
+
+---
+
+## 5. Tự đánh giá
+
+- Hoàn thành khoảng 95%  
+- Các chức năng chính đã đầy đủ  
+- Code chạy ổn  
+- Có thể bắt đầu làm phần thống kê và nâng cao  
