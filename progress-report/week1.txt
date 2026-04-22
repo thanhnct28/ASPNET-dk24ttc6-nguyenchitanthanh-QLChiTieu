@@ -1,94 +1,96 @@
-BÁO CÁO TIẾN ĐỘ TUẦN 1
-Thời gian: 08/03/2026 - 14/03/2026
+# BÁO CÁO TIẾN ĐỘ TUẦN 1
+**Thời gian:** 08/03/2026 - 14/03/2026
 
-1. Nội dung đã thực hiện
+## 1. Những việc đã làm trong tuần
 
-- Tạo repository GitHub:
-  ASPNET-dk24ttc6-nguyenchitanthanh-QLChiTieu
+Tuần đầu bắt đầu triển khai đề tài quản lý chi tiêu cá nhân.
 
-- Khởi tạo project ASP.NET WebForms trong Visual Studio
+- Tạo repository GitHub để lưu source code:  
+  `ASPNET-dk24ttc6-nguyenchitanthanh-QLChiTieu`
 
-- Xây dựng cấu trúc project gồm:
-  + MasterPage (Site.Master)
-  + Các trang chức năng (DangNhap.aspx, ChiTieu.aspx,...)
+- Tạo project ASP.NET WebForms bằng Visual Studio  
+- Chia layout cơ bản bằng MasterPage (Site.Master)
 
-- Thiết kế cơ sở dữ liệu SQL Server gồm các bảng:
-  + NguoiDung (quản lý tài khoản đăng nhập)
-  + DanhMucChi (lưu danh mục chi tiêu)
-  + ChiTieu (lưu thông tin chi tiêu)
-  + (dự kiến thêm ThuNhap)
+- Tạo các trang chính:
+  - DangNhap.aspx  
+  - ChiTieu.aspx  
 
-- Thiết lập kết nối database trong Web.config bằng ConnectionString
+- Thiết kế database SQL Server gồm:
+  - NguoiDung (lưu tài khoản)  
+  - DanhMucChi (các loại chi tiêu)  
+  - ChiTieu (thông tin chi tiêu)  
+  - Dự định thêm bảng ThuNhap ở các tuần sau  
 
-- Xây dựng chức năng quản lý chi tiêu (ChiTieu.aspx):
-  + Giao diện nhập:
-    * Số tiền
-    * Ngày chi
-    * Danh mục
-    * Ghi chú
+- Cấu hình kết nối database trong Web.config (ConnectionString), test kết nối OK
 
-  + Hiển thị danh sách chi tiêu bằng GridView:
-    * Hiển thị các cột: Mã, Danh mục, Số tiền, Ngày chi, Ghi chú
-    * Sắp xếp theo ngày chi giảm dần
+- Trang ChiTieu:
+  - Nhập dữ liệu:
+    - Số tiền  
+    - Ngày chi  
+    - Danh mục  
+    - Ghi chú  
 
-  + Thực hiện các chức năng:
-    * Thêm mới chi tiêu (INSERT)
-    * Sửa chi tiêu (UPDATE)
-    * Xóa chi tiêu (DELETE)
+  - Hiển thị danh sách bằng GridView:
+    - Các cột: mã, danh mục, số tiền, ngày, ghi chú  
+    - Sắp xếp theo ngày chi mới nhất  
+
+- Chức năng đã làm:
+  - Thêm mới  
+  - Sửa  
+  - Xóa  
 
 - Xử lý dữ liệu bằng ADO.NET:
-  + SqlConnection
-  + SqlCommand
-  + SqlDataAdapter
+  - SqlConnection  
+  - SqlCommand  
+  - SqlDataAdapter  
 
-- Sử dụng Session để kiểm tra đăng nhập:
-  + Nếu chưa login → chuyển về trang đăng nhập
+- Dùng Session để kiểm tra đăng nhập (chưa login thì chuyển về trang login)
 
-- Thêm kiểm tra dữ liệu đầu vào:
-  + Kiểm tra số tiền hợp lệ
-  + Kiểm tra ngày hợp lệ
+- Kiểm tra dữ liệu nhập:
+  - Số tiền phải là số  
+  - Ngày đúng định dạng  
 
-- Cải thiện giao diện:
-  + Sử dụng Bootstrap
-  + Thêm CSS tùy chỉnh
-  + Sử dụng Font Awesome icon
+- Giao diện:
+  - Dùng Bootstrap  
+  - Thêm CSS  
+  - Dùng icon Font Awesome  
 
-- Thêm JavaScript:
-  + Format số tiền khi nhập
-  + Hiển thị confirm khi xóa dữ liệu
-
----
-
-2. Kết quả đạt được
-
-- Chạy được project ASP.NET
-- Kết nối thành công với SQL Server
-- Thực hiện được chức năng CRUD chi tiêu
-- Hiển thị dữ liệu lên GridView
-- Giao diện tương đối hoàn chỉnh, dễ sử dụng
+- JavaScript:
+  - Format số tiền khi nhập  
+  - Hiện confirm khi xóa  
 
 ---
 
-3. Khó khăn gặp phải
+## 2. Kết quả đạt được
 
-- Lỗi cấu hình GridView (CommandField)
-- Xử lý format số tiền khi nhập
-- Validate dữ liệu đầu vào
-- Làm việc với Session trong ASP.NET
-
----
-
-4. Hướng phát triển tuần tiếp theo
-
-- Hoàn thiện chức năng đăng nhập / đăng xuất
-- Xây dựng quản lý danh mục
-- Tối ưu giao diện
-- Bắt đầu xây dựng chức năng thu nhập
+- Project chạy được trên Visual Studio  
+- Kết nối database ổn định  
+- CRUD chi tiêu hoạt động  
+- Hiển thị dữ liệu lên GridView bình thường  
+- Giao diện cơ bản, dễ thao tác  
 
 ---
 
-5. Tự đánh giá
+## 3. Khó khăn gặp phải
 
-- Mức độ hoàn thành: 70%
-- Đã nắm được cách xây dựng WebForms + ADO.NET
-- Cần cải thiện xử lý lỗi và UI
+- Lỗi GridView (CommandField)  
+- Format số tiền chưa ổn định  
+- Validate dữ liệu còn thiếu  
+- Session ban đầu hơi rối  
+
+---
+
+## 4. Kế hoạch tuần tiếp theo
+
+- Hoàn thiện đăng nhập / đăng xuất  
+- Làm quản lý danh mục chi tiêu  
+- Chỉnh lại giao diện  
+- Bắt đầu làm chức năng thu nhập  
+
+---
+
+## 5. Tự đánh giá
+
+- Hoàn thành khoảng 70%  
+- Đã hiểu cơ bản cách làm WebForms và ADO.NET  
+- Xử lý lỗi và giao diện vẫn còn chưa tốt  
