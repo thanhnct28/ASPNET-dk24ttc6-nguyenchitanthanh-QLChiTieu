@@ -1,0 +1,95 @@
+# BÁO CÁO TIẾN ĐỘ TUẦN 7
+**Thời gian:** 19/04/2026 - 25/04/2026
+
+## 1. Nội dung đã làm
+
+- Test lại toàn bộ hệ thống:
+
+  - Login / logout  
+  - Quản lý danh mục  
+  - Chi tiêu  
+  - Thu nhập  
+  - Thống kê và biểu đồ  
+
+- Fix lỗi:
+
+  - GridView:
+    - Lỗi CommandField  
+    - Lỗi khi edit/update  
+
+  - Validate:
+    - Nhập sai định dạng số tiền  
+    - Ngày không hợp lệ  
+
+  - Giao diện:
+    - Lệch layout  
+    - Hiển thị chưa đồng nhất  
+
+- Chỉnh lại UI:
+
+  - Căn layout bằng Bootstrap  
+  - Tăng padding, margin  
+  - Đồng bộ màu giữa các trang  
+
+- Cải thiện trải nghiệm:
+
+  - Thêm thông báo:
+    - Thành công  
+    - Thất bại  
+
+  - Có confirm khi xóa  
+  - Format dữ liệu dễ đọc hơn  
+
+- Tối ưu code:
+
+  - Bỏ code dư  
+  - Sắp xếp lại cho dễ nhìn  
+  - Đặt lại tên biến rõ hơn  
+
+- Bảo mật cơ bản:
+
+  - Kiểm tra `Session["user"]` ở các trang  
+  - Chưa login thì không cho truy cập  
+  - Dùng Parameters khi query  
+
+- Kiểm tra dữ liệu:
+
+  - Dữ liệu đúng theo từng user  
+  - Không bị trùng  
+  - Thêm/sửa/xóa nhiều lần không lỗi  
+
+---
+
+## 2. Kết quả đạt được
+
+- Hệ thống chạy ổn định  
+- Không còn lỗi lớn  
+- Giao diện nhìn gọn hơn  
+- Trải nghiệm tốt hơn  
+- Dữ liệu xử lý đúng  
+
+---
+
+## 3. Khó khăn gặp phải
+
+- Debug GridView trong WebForms hơi mất thời gian  
+- Đồng bộ dữ liệu giữa các trang  
+- Chỉnh UI cho đồng nhất  
+- Test nhiều trường hợp dữ liệu  
+
+---
+
+## 4. Hướng làm tiếp
+
+- Hoàn thiện lại toàn bộ hệ thống  
+- Làm báo cáo đồ án  
+- Viết README trên GitHub  
+- Chuẩn bị slide thuyết trình  
+
+---
+
+## 5. Tự đánh giá
+
+- Hoàn thành 100% chức năng  
+- Hệ thống chạy ổn, có thể demo  
+- Sẵn sàng cho phần báo cáo  
