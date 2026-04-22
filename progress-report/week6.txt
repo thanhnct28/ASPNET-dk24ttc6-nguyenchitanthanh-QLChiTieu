@@ -1,104 +1,99 @@
-BÁO CÁO TIẾN ĐỘ TUẦN 6
-Thời gian: 12/04/2026 - 18/04/2026
+# BÁO CÁO TIẾN ĐỘ TUẦN 6
+**Thời gian:** 12/04/2026 - 18/04/2026
 
-1. Nội dung đã thực hiện
+## 1. Nội dung đã làm
 
-- Xây dựng chức năng thống kê tài chính:
+- Làm chức năng thống kê tài chính
 
-  + Tính toán:
-    * Tổng thu nhập
-    * Tổng chi tiêu
-    * Số dư (Thu - Chi)
+  - Tính:
+    - Tổng thu  
+    - Tổng chi  
+    - Số dư (thu - chi)  
 
-  + Hiển thị kết quả trên giao diện:
-    * Dạng text (label)
-    * Phân biệt màu sắc:
-      - Thu: màu xanh
-      - Chi: màu đỏ
+  - Hiển thị:
+    - Dạng text (label)  
+    - Có phân màu:
+      - Thu: xanh  
+      - Chi: đỏ  
 
-- Tạo trang Dashboard (ThongKe.aspx):
+- Tạo trang Dashboard (ThongKe.aspx)
 
-  + Thiết kế giao diện tổng quan
-  + Sử dụng Bootstrap để bố trí layout
-  + Hiển thị các thông tin:
-    * Tổng thu
-    * Tổng chi
-    * Số dư hiện tại
+  - Giao diện tổng quan  
+  - Bố cục bằng Bootstrap  
+  - Hiển thị:
+    - Tổng thu  
+    - Tổng chi  
+    - Số dư  
 
-- Tích hợp biểu đồ (Chart.js):
+- Tích hợp biểu đồ (Chart.js)
 
-  + Sử dụng thư viện Chart.js
-  + Hiển thị dữ liệu dưới dạng biểu đồ:
-    * Biểu đồ tròn (Pie chart):
-      - Tỷ lệ thu / chi
-    * Biểu đồ cột (Bar chart):
-      - Thống kê theo ngày hoặc tháng
+  - Dùng Chart.js  
+  - Hiển thị:
+    - Biểu đồ tròn (tỷ lệ thu / chi)  
+    - Biểu đồ cột (theo ngày hoặc tháng)  
 
-- Xử lý dữ liệu thống kê:
+- Xử lý dữ liệu:
 
-  + Truy vấn SQL:
-    * SUM(SoTien) cho bảng ThuNhap
-    * SUM(SoTien) cho bảng ChiTieu
+  - Query SQL:
+    - SUM(SoTien) bên ThuNhap  
+    - SUM(SoTien) bên ChiTieu  
 
-  + Lọc dữ liệu theo người dùng:
-    * Sử dụng Session["user"]
+  - Lọc theo user:
+    - Dùng `Session["user"]`  
 
-- Truyền dữ liệu từ C# sang JavaScript:
+- Truyền dữ liệu sang JavaScript:
 
-  + Sử dụng:
-    * Literal
-    * hoặc ClientScript/RegisterStartupScript
+  - Dùng Literal hoặc RegisterStartupScript  
+  - Đổ dữ liệu vào Chart.js  
 
-  + Đổ dữ liệu vào Chart.js
+- Giao diện:
 
-- Cải thiện giao diện:
+  - Dùng card hiển thị số liệu  
+  - Có shadow, bo góc  
+  - Nhìn gọn hơn trước  
 
-  + Card hiển thị số liệu
-  + Shadow + bo góc
-  + Giao diện hiện đại hơn
+- Trải nghiệm:
 
-- Tối ưu trải nghiệm người dùng:
-
-  + Dữ liệu hiển thị trực quan
-  + Dễ theo dõi tình hình tài chính
-  + Phản hồi nhanh
+  - Dữ liệu nhìn trực quan hơn  
+  - Dễ theo dõi thu chi  
+  - Load nhanh, phản hồi ổn  
 
 ---
 
-2. Kết quả đạt được
+## 2. Kết quả đạt được
 
-- Hiển thị chính xác:
-  + Tổng thu
-  + Tổng chi
-  + Số dư
+- Hiển thị đúng:
+  - Tổng thu  
+  - Tổng chi  
+  - Số dư  
 
-- Biểu đồ hoạt động tốt
-- Giao diện dashboard rõ ràng, dễ hiểu
-- Người dùng có thể theo dõi tài chính trực quan
-
----
-
-3. Khó khăn gặp phải
-
-- Truyền dữ liệu từ C# sang JavaScript
-- Cấu hình và sử dụng Chart.js
-- Xử lý dữ liệu thống kê từ nhiều bảng
-- Đồng bộ dữ liệu khi thay đổi
+- Biểu đồ hoạt động bình thường  
+- Dashboard nhìn rõ ràng  
+- Có thể theo dõi tài chính trực quan  
 
 ---
 
-4. Hướng phát triển tuần tiếp theo
+## 3. Khó khăn gặp phải
 
-- Kiểm thử toàn bộ hệ thống
-- Fix lỗi phát sinh
-- Tối ưu giao diện
-- Hoàn thiện báo cáo đồ án
+- Truyền dữ liệu từ C# sang JavaScript  
+- Làm quen Chart.js ban đầu hơi rối  
+- Xử lý tổng hợp dữ liệu từ nhiều bảng  
+- Dữ liệu thay đổi chưa cập nhật ngay  
 
 ---
 
-5. Tự đánh giá
+## 4. Hướng làm tiếp
 
-- Mức độ hoàn thành: 98%
-- Đã hoàn thiện đầy đủ chức năng hệ thống
-- Có thêm phần thống kê nâng cao
-- Giao diện và trải nghiệm người dùng tốt
+- Test lại toàn bộ hệ thống  
+- Fix lỗi còn lại  
+- Chỉnh lại giao diện  
+- Hoàn thiện báo cáo đồ án  
+
+---
+
+## 5. Tự đánh giá
+
+- Hoàn thành khoảng 98%  
+- Các chức năng chính đã xong  
+- Có thêm phần thống kê  
+- Giao diện và trải nghiệm ổn  
