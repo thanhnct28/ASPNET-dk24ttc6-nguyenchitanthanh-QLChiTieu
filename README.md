@@ -11,23 +11,21 @@
 ---
 
 ## 📌 Giới thiệu đề tài
-Trong thời đại hiện nay, việc quản lý tài chính cá nhân là một nhu cầu thiết yếu.  
-Đề tài xây dựng một hệ thống web giúp người dùng theo dõi, kiểm soát và phân tích thu chi một cách hiệu quả.
+Hiện nay việc quản lý tài chính cá nhân khá quan trọng, nhất là khi chi tiêu ngày càng nhiều.
+Đề tài này xây dựng một website để theo dõi và quản lý thu chi hàng ngày cho dễ kiểm soát hơn.
 
-Hệ thống hỗ trợ:
-- Theo dõi thu nhập và chi tiêu
-- Phân loại theo danh mục
-- Thống kê trực quan bằng biểu đồ
-- Xuất báo cáo Excel
-
+Hệ thống có các chức năng chính:
+- Ghi lại thu nhập và chi tiêu
+- Phân loại theo từng danh mục
+- Xem thống kê bằng biểu đồ
+- Xuất báo cáo ra file Excel
 ---
 
 ## 🎯 Mục tiêu hệ thống
-- Giúp người dùng kiểm soát tài chính cá nhân
-- Hạn chế chi tiêu không cần thiết
-- Hỗ trợ lập kế hoạch tài chính
-- Cung cấp báo cáo trực quan, dễ hiểu
-
+- Giúp theo dõi và kiểm soát chi tiêu cá nhân
+- Hạn chế các khoản chi không cần thiết
+- Hỗ trợ lên kế hoạch tài chính
+- Có báo cáo rõ ràng, dễ xem
 ---
 
 ## ⚙️ Công nghệ sử dụng
@@ -177,74 +175,54 @@ WITH REPLACE, RECOVERY;
 
 -----------------------
 
-## 🖥️ Giao diện hệ thống
-📌 Các trang chính:
+## Giao diện hệ thống
 
-* Đăng nhập
+Các trang chính:
+- Đăng nhập  
+- Quản lý danh mục  
+- Quản lý chi tiêu  
+- Quản lý thu nhập  
+- Trang thống kê (dashboard)  
 
-* Quản lý danh mục
+## Kết quả đạt được
 
-* Quản lý chi tiêu
+- Làm được đầy đủ CRUD  
+- Giao diện nhìn ổn, dễ dùng  
+- Có biểu đồ để xem thu chi  
+- Xuất được file Excel  
+- Hệ thống chạy ổn  
 
-* Quản lý thu nhập
+## Hướng phát triển thêm
 
-* Dashboard thống kê
+- Xuất thêm file PDF  
+- Thống kê chi tiết hơn (theo năm, theo tháng)  
+- Phân quyền user / admin  
+- Deploy lên hosting  
+- Có thể làm thêm API hoặc mobile app  
 
-📈 Kết quả đạt được
+## Tiến độ thực hiện
 
-* Hoàn thành đầy đủ chức năng CRUD
+- Week 1: setup project, tạo database  
+- Week 2: làm login / logout  
+- Week 3: CRUD danh mục  
+- Week 4: CRUD chi tiêu  
+- Week 5: CRUD thu nhập  
+- Week 6: làm dashboard + biểu đồ  
+- Week 7: thêm validate, export Excel  
+- Week 8: chỉnh UI và hoàn thiện  
 
-* Giao diện thân thiện, dễ sử dụng
+## Ghi chú
 
-* Thống kê trực quan bằng biểu đồ
+- Dữ liệu hiện tại dùng để test/demo  
+- Hệ thống làm với mục đích học tập  
 
-* Xuất báo cáo Excel
+## Đánh giá
 
-* Hệ thống hoạt động ổn định
-
-🔧 Hướng phát triển
-
-* Xuất báo cáo PDF
-
-* Thống kê theo năm nâng cao
-
-* Phân quyền người dùng
-
-* Triển khai lên hosting
-
-* Xây dựng API / Mobile App
-
-📅 Tiến độ thực hiện
-Tuần	Nội dung
-
-- [x] **Week 1:** Setup project + database
-- [x] **Week 2:**	Login / Logout
-- [x] **Week 3:**	CRUD DanhMuc
-- [x] **Week 4:**	CRUD ChiTieu
-- [x] **Week 5:**	CRUD ThuNhap
-- [x] **Week 6:**	Dashboard + Chart
-- [x] **Week 7:**	Validate + Export Excel
-- [x] **Week 8:**	Hoàn thiện UI + Final
-
-
-📌 Ghi chú
-
-* Dữ liệu chỉ mang tính demo
-
-* Hệ thống phục vụ mục đích học tập
-
-⭐ Đánh giá
-
-* Đồ án đáp ứng đầy đủ yêu cầu:
-
-* Có CRUD
-
-* Có Dashboard
-
-* Có biểu đồ
-
-* Có xuất báo cáo (file excel)
-
+- Đã làm được các chức năng cơ bản:
+  - CRUD  
+  - Dashboard  
+  - Biểu đồ  
+  - Xuất file Excel  
 
 ## 📎 Link GitHub
 
