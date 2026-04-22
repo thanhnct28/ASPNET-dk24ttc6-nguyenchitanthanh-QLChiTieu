@@ -10,22 +10,24 @@
 
 ---
 
-## 📌 Giới thiệu đề tài
-Hiện nay việc quản lý tài chính cá nhân khá quan trọng, nhất là khi chi tiêu ngày càng nhiều.
-Đề tài này xây dựng một website để theo dõi và quản lý thu chi hàng ngày cho dễ kiểm soát hơn.
+## Giới thiệu đề tài
 
-Hệ thống có các chức năng chính:
-- Ghi lại thu nhập và chi tiêu
-- Phân loại theo từng danh mục
-- Xem thống kê bằng biểu đồ
-- Xuất báo cáo ra file Excel
+Hiện nay việc quản lý tài chính cá nhân khá quan trọng, nhất là khi chi tiêu ngày càng nhiều.  
+Đề tài này làm một website đơn giản để theo dõi thu chi hàng ngày, giúp dễ kiểm soát hơn.
+
+Chức năng chính:
+- Ghi lại thu nhập và chi tiêu  
+- Phân loại theo danh mục  
+- Xem thống kê bằng biểu đồ  
+- Xuất báo cáo ra file Excel  
 ---
 
-## 🎯 Mục tiêu hệ thống
-- Giúp theo dõi và kiểm soát chi tiêu cá nhân
-- Hạn chế các khoản chi không cần thiết
-- Hỗ trợ lên kế hoạch tài chính
-- Có báo cáo rõ ràng, dễ xem
+## Mục tiêu
+
+- Theo dõi và kiểm soát chi tiêu cá nhân  
+- Giảm bớt các khoản chi không cần thiết  
+- Hỗ trợ lên kế hoạch tài chính  
+- Có báo cáo để dễ xem lại  
 ---
 
 ## ⚙️ Công nghệ sử dụng
@@ -42,25 +44,26 @@ Hệ thống có các chức năng chính:
 
 ---
 
-## 🧩 Chức năng chính
+## Chức năng chính
 
-### 🔐 1. Xác thực người dùng
-- Đăng ký tài khoản
-- Đăng nhập / đăng xuất
-- Kiểm tra session
-- Mã hóa mật khẩu bằng SHA-256 trước khi lưu database
+### 1. Xác thực người dùng
+- Đăng ký tài khoản  
+- Đăng nhập / đăng xuất  
+- Kiểm tra session  
+- Mã hóa mật khẩu (SHA-256) trước khi lưu  
 
 ---
-## 🔒 Bảo mật hệ thống
+## Bảo mật hệ thống
 
-Hệ thống sử dụng cơ chế mã hóa mật khẩu để đảm bảo an toàn thông tin người dùng:
+Phần mật khẩu có xử lý lại trước khi lưu để tránh lưu trực tiếp:
 
-- Mật khẩu không lưu dạng plain text
-- Sử dụng thuật toán băm SHA-256
-- Mật khẩu được hash trước khi lưu vào database
-- Khi đăng nhập, hệ thống hash password nhập vào và so sánh với dữ liệu đã lưu
-- Áp dụng SecurityHelper để xử lý hash tập trung
-- Đảm bảo bảo mật cơ bản theo nguyên tắc không lưu mật khẩu dạng plain text
+- Không lưu mật khẩu dạng plain text  
+- Dùng SHA-256 để hash  
+- Hash xong mới lưu vào database  
+- Khi login thì hash lại rồi so sánh  
+- Có dùng SecurityHelper để xử lý chung  
+
+=> Mức bảo mật ở mức cơ bản, tránh lộ mật khẩu dạng thô  
 
 👉 **Ví dụ:**
 ```text
