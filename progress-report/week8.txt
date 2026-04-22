@@ -1,0 +1,96 @@
+# BÁO CÁO TIẾN ĐỘ TUẦN 8
+**Thời gian:** 26/04/2026 - 28/04/2026
+
+## 1. Nội dung đã làm
+
+- Rà soát lại toàn bộ hệ thống:
+
+  - Login / logout  
+  - Quản lý danh mục  
+  - Chi tiêu  
+  - Thu nhập  
+  - Thống kê và biểu đồ  
+
+  - Kiểm tra lại để đảm bảo chạy ổn, không lỗi lớn  
+
+- Test tổng thể:
+
+  - Test các luồng:
+    - Thêm → sửa → xóa  
+    - Login nhiều lần  
+    - Dữ liệu theo từng user  
+
+  - Test thêm các trường hợp:
+    - Nhập sai dữ liệu  
+    - Bỏ trống  
+    - Dữ liệu lớn  
+
+- Chỉnh lại giao diện:
+
+  - Căn lại layout  
+  - Đồng bộ style giữa các trang  
+  - Kiểm tra hiển thị trên nhiều màn hình  
+
+- Hoàn thiện GitHub:
+
+  - Sắp xếp lại thư mục:
+    - src (source code)  
+    - progress-report  
+    - thesis  
+    - setup  
+
+  - Cập nhật README:
+    - Mô tả hệ thống  
+    - Cách cài đặt  
+    - Các chức năng  
+
+  - Upload đầy đủ:
+    - Source code  
+    - Báo cáo tiến độ  
+
+- Chuẩn bị báo cáo:
+
+  - Tổng hợp nội dung  
+  - Viết tài liệu  
+  - Làm slide thuyết trình  
+
+- Kiểm tra lần cuối:
+
+  - Project chạy OK  
+  - Database không lỗi  
+  - Code đầy đủ, dễ đọc  
+
+---
+
+## 2. Kết quả đạt được
+
+- Hệ thống hoàn thiện  
+- Các chức năng chạy ổn  
+- Giao diện rõ ràng, dễ dùng  
+- GitHub đầy đủ, dễ theo dõi  
+- Sẵn sàng để nộp và demo  
+
+---
+
+## 3. Khó khăn gặp phải
+
+- Sửa các lỗi nhỏ phát sinh  
+- Đồng bộ giao diện giữa các trang  
+- Gom tài liệu lại cho gọn  
+
+---
+
+## 4. Hướng phát triển thêm
+
+- Mã hóa mật khẩu (hash)  
+- Phân quyền user / admin  
+- Xuất báo cáo PDF / Excel  
+- Deploy lên hosting  
+- Tối ưu mobile  
+
+---
+
+## 5. Tự đánh giá
+
+- Hoàn thành 100%  
+- Đáp ứng yêu cầu đồ án  
