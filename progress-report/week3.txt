@@ -1,84 +1,84 @@
-BÁO CÁO TIẾN ĐỘ TUẦN 3
-Thời gian: 22/03/2026 - 28/03/2026
+# BÁO CÁO TIẾN ĐỘ TUẦN 3
+**Thời gian:** 22/03/2026 - 28/03/2026
 
-1. Nội dung đã thực hiện
+## 1. Nội dung đã làm
 
-- Xây dựng chức năng quản lý danh mục chi tiêu (DanhMucChi):
+- Làm chức năng quản lý danh mục chi tiêu (DanhMucChi)
 
-  + Tạo trang DanhMuc.aspx
-  + Thiết kế giao diện gồm:
-    * Nhập tên danh mục
-    * Nút thêm danh mục
-    * Danh sách danh mục (GridView)
+  - Tạo trang DanhMuc.aspx  
+  - Giao diện gồm:
+    - Nhập tên danh mục  
+    - Nút thêm  
+    - Danh sách hiển thị bằng GridView  
 
-- Hiển thị danh sách danh mục:
-  + Lấy dữ liệu từ bảng DanhMucChi
-  + Hiển thị theo người dùng (MaNguoiDung)
-  + Sử dụng GridView để hiển thị
+- Hiển thị danh mục:
+  - Lấy dữ liệu từ bảng DanhMucChi  
+  - Lọc theo người dùng (MaNguoiDung)  
+  - Dùng GridView để hiển thị  
 
-- Thực hiện các chức năng CRUD danh mục:
-  + Thêm danh mục (INSERT)
-  + Sửa danh mục (UPDATE)
-  + Xóa danh mục (DELETE)
+- Chức năng CRUD:
+  - Thêm  
+  - Sửa  
+  - Xóa  
 
-- Xử lý dữ liệu bằng ADO.NET:
-  + SqlConnection
-  + SqlCommand
-  + SqlDataAdapter
+- Xử lý bằng ADO.NET:
+  - SqlConnection  
+  - SqlCommand  
+  - SqlDataAdapter  
 
-- Ràng buộc dữ liệu theo người dùng:
-  + Mỗi user chỉ thấy danh mục của mình
-  + Sử dụng Session["user"] để lọc dữ liệu
+- Ràng buộc theo user:
+  - Mỗi user chỉ thấy dữ liệu của mình  
+  - Dùng `Session["user"]` để lọc  
 
-- Liên kết danh mục với chi tiêu:
-  + Sử dụng DropDownList trong ChiTieu.aspx
-  + Load danh mục từ database vào dropdown
-  + Hiển thị TenDanhMuc thay vì MaDanhMuc
+- Liên kết với chi tiêu:
+  - Dùng DropDownList trong ChiTieu.aspx  
+  - Load danh mục từ database lên dropdown  
+  - Hiển thị tên danh mục thay vì ID  
 
-- Cập nhật chức năng chi tiêu:
-  + Khi thêm chi tiêu → chọn danh mục từ dropdown
-  + Hiển thị tên danh mục trong GridView (JOIN bảng)
+- Cập nhật lại phần chi tiêu:
+  - Khi thêm → chọn danh mục từ dropdown  
+  - Hiển thị tên danh mục trong GridView (JOIN bảng)  
 
-- Cải thiện giao diện:
-  + Sử dụng Bootstrap
-  + Tăng tính trực quan cho danh sách danh mục
-  + Thêm thông báo khi thêm/sửa/xóa
-
----
-
-2. Kết quả đạt được
-
-- Hoàn thành chức năng CRUD danh mục
-- Dữ liệu danh mục hiển thị đúng theo từng user
-- Dropdown danh mục hoạt động chính xác
-- Liên kết thành công giữa DanhMucChi và ChiTieu
-- Giao diện dễ sử dụng, rõ ràng
+- Giao diện:
+  - Dùng Bootstrap  
+  - Danh sách nhìn rõ hơn  
+  - Có thông báo khi thêm/sửa/xóa  
 
 ---
 
-3. Khó khăn gặp phải
+## 2. Kết quả đạt được
 
-- Lỗi khi load dữ liệu vào DropDownList
-- Xử lý quan hệ giữa bảng DanhMucChi và ChiTieu
-- Hiển thị tên danh mục thay vì ID
-- Đồng bộ dữ liệu sau khi thêm/xóa
-
----
-
-4. Hướng phát triển tuần tiếp theo
-
-- Hoàn thiện chức năng chi tiêu:
-  + Validate dữ liệu tốt hơn
-  + Format tiền tệ
-  + Tối ưu UI
-
-- Bắt đầu xây dựng chức năng thu nhập (ThuNhap)
+- Làm xong CRUD danh mục  
+- Dữ liệu hiển thị đúng theo từng user  
+- Dropdown hoạt động bình thường  
+- Liên kết được giữa DanhMucChi và ChiTieu  
+- Giao diện dễ nhìn hơn  
 
 ---
 
-5. Tự đánh giá
+## 3. Khó khăn gặp phải
 
-- Mức độ hoàn thành: 85%
-- Đã hiểu rõ cách tổ chức dữ liệu theo user
-- Thành thạo CRUD với ADO.NET
-- Hệ thống bắt đầu hoàn chỉnh hơn
+- Load dữ liệu vào DropDownList lúc đầu bị lỗi  
+- Xử lý quan hệ giữa 2 bảng hơi rối  
+- Hiển thị tên thay vì ID phải sửa query  
+- Sau khi thêm/xóa đôi lúc chưa refresh kịp  
+
+---
+
+## 4. Hướng làm tiếp
+
+- Hoàn thiện thêm phần chi tiêu:
+  - Validate kỹ hơn  
+  - Format tiền tệ  
+  - Chỉnh lại UI  
+
+- Bắt đầu làm chức năng thu nhập (ThuNhap)  
+
+---
+
+## 5. Tự đánh giá
+
+- Hoàn thành khoảng 85%  
+- Hiểu cách tổ chức dữ liệu theo user  
+- Làm CRUD quen tay hơn  
+- Hệ thống nhìn tổng thể đã rõ hơn  
