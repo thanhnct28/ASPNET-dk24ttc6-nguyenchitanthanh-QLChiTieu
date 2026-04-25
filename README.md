@@ -136,7 +136,11 @@ git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiT
 ```
 
 ### 2. Mở bằng Visual Studio
-* Mở file giải pháp: `QuanLyChiTieuCaNhan.slnx`
+* Mở file: `QuanLyChiTieuCaNhan.slnx`
+
+📂 Vị trí file trong repository:
+```text
+/scr/QuanLyChiTieuCaNhan/QuanLyChiTieuCaNhan.slnx
 
 ### 3. Cấu hình database
 
