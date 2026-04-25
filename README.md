@@ -203,7 +203,6 @@ Các trang chính:
 - Giao diện nhìn ổn, dễ dùng  
 - Có biểu đồ để xem thu chi  
 - Xuất được file Excel  
-- Hệ thống chạy ổn  
 
 ## Hướng phát triển thêm
 
