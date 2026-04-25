@@ -162,7 +162,12 @@ git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiT
 
 * Restore file QuanLyChiTieuCaNhan.bak
 
-* Hướng dẫn dùng lệnh restore file database, ví dụ file để ở ổ đĩa D:
+📂 Vị trí file database trong repository:
+```text
+/scr/database/QuanLyChiTieuCaNhan.bak
+```
+
+* Trong SQL Server, dùng lệnh restore file database, ví dụ file để ở ổ đĩa D:
 
 ```sql
 RESTORE DATABASE QuanLyChiTieuCaNhan
