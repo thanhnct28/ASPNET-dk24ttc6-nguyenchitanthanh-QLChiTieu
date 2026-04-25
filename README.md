@@ -158,10 +158,6 @@ git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiT
 
 ### 4. Import database
 
-* Mở SQL Server
-
-* Restore file QuanLyChiTieuCaNhan.bak
-
 📂 Vị trí file database trong repository:
 ```text
 /scr/database/QuanLyChiTieuCaNhan.bak
