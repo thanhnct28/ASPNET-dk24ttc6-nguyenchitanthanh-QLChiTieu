@@ -141,6 +141,7 @@ git clone https://github.com/thanhnct28/ASPNET-dk24ttc6-nguyenchitanthanh-QLChiT
 📂 Vị trí file trong repository:
 ```text
 /scr/QuanLyChiTieuCaNhan/QuanLyChiTieuCaNhan.slnx
+```text
 
 ### 3. Cấu hình database
 
